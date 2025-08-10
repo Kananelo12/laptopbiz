@@ -1,0 +1,16 @@
+[
+  {
+    "id": "1754840815834",
+    "corporateBrand": "Dell",
+    "productBrand": "Latitude",
+    "performanceTier": "i5",
+    "generation": "7th Gen",
+    "sku": "660U",
+    "purchasePrice": 3800,
+    "conditionNotes": "testing",
+    "quantity": 3,
+    "status": "available",
+    "purchaseDate": "2025-08-10",
+    "createdAt": "2025-08-10T15:46:55.834Z"
+  }
+]
