@@ -26,6 +26,7 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 import { Laptop } from "@/lib/data";
+import * as XLSX from 'xlsx';
 
 export default function StockPage() {
   const [laptops, setLaptops] = useState<Laptop[]>([]);
@@ -49,6 +50,71 @@ export default function StockPage() {
   useEffect(() => {
     fetchLaptops();
   }, []);
+
+  const exportToExcel = () => {
+    const exportData = laptops.map(laptop => ({
+      'Corporate Brand': laptop.corporateBrand,
+      'Product Brand': laptop.productBrand,
+      'Performance Tier': laptop.performanceTier,
+      'Generation': laptop.generation,
+      'SKU': laptop.sku,
+      'Purchase Price': laptop.purchasePrice,
+      'Quantity': laptop.quantity,
+      'Status': laptop.status,
+      'Purchase Date': laptop.purchaseDate,
+      'Condition Notes': laptop.conditionNotes,
+      'Created Date': new Date(laptop.createdAt).toLocaleDateString(),
+    }));
+
+    const ws = XLSX.utils.json_to_sheet(exportData);
+    const wb = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(wb, ws, "Stock");
+    XLSX.writeFile(wb, `stock_${new Date().toISOString().split('T')[0]}.xlsx`);
+    toast.success("Stock data exported successfully");
+  };
+
+  const handleImport = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = async (event) => {
+      try {
+        const data = new Uint8Array(event.target?.result as ArrayBuffer);
+        const workbook = XLSX.read(data, { type: 'array' });
+        const worksheet = workbook.Sheets[workbook.SheetNames[0]];
+        const jsonData = XLSX.utils.sheet_to_json(worksheet);
+
+        for (const row of jsonData as any[]) {
+          if (row['Corporate Brand'] && row['Product Brand'] && row['SKU']) {
+            await fetch("/api/laptops", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                corporateBrand: row['Corporate Brand'],
+                productBrand: row['Product Brand'],
+                performanceTier: row['Performance Tier'] || 'i5',
+                generation: row['Generation'] || '',
+                sku: row['SKU'],
+                purchasePrice: parseFloat(row['Purchase Price']) || 0,
+                quantity: parseInt(row['Quantity']) || 1,
+                purchaseDate: row['Purchase Date'] || new Date().toISOString().split('T')[0],
+                conditionNotes: row['Condition Notes'] || '',
+              }),
+            });
+          }
+        }
+
+        toast.success("Stock imported successfully");
+        fetchLaptops();
+      } catch (error) {
+        console.error("Import error:", error);
+        toast.error("Failed to import stock");
+      }
+    };
+    reader.readAsArrayBuffer(file);
+    e.target.value = '';
+  };
 
   const fetchLaptops = async () => {
     try {
@@ -163,11 +229,19 @@ export default function StockPage() {
         description="Manage your laptop inventory"
       >
         <div className="flex items-center gap-2">
+          <input
+            type="file"
+            accept=".xlsx,.xls"
+            onChange={handleImport}
+            className="hidden"
+            id="import-stock"
+          />
           <Button variant="outline" size="sm">
+            <Button variant="outline" size="sm" onClick={() => document.getElementById('import-stock')?.click()}>
             <Upload className="h-4 w-4 mr-2" />
             Import
           </Button>
-          <Button variant="outline" size="sm">
+          <Button variant="outline" size="sm" onClick={exportToExcel}>
             <Download className="h-4 w-4 mr-2" />
             Export
           </Button>
