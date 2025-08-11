@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": "1754911423142",
+    "laptopId": "1754840815834",
+    "clientId": "1754911392535",
+    "salePrice": 5800,
+    "paymentStatus": "partial",
+    "paymentMethod": "cash",
+    "saleDate": "2025-08-11",
+    "commissionEarner": "Thomas",
+    "commissionAmount": 300,
+    "createdAt": "2025-08-11T11:23:43.142Z"
+  }
+]
