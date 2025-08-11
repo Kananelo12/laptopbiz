@@ -12,5 +12,19 @@
     "status": "available",
     "purchaseDate": "2025-08-10",
     "createdAt": "2025-08-10T15:46:55.834Z"
+  },
+  {
+    "id": "1754907073537",
+    "corporateBrand": "HP",
+    "productBrand": "G15",
+    "performanceTier": "i7",
+    "generation": "8th Gen",
+    "sku": "8025U",
+    "purchasePrice": 6500,
+    "conditionNotes": "testing again",
+    "quantity": 1,
+    "status": "available",
+    "purchaseDate": "2025-08-11",
+    "createdAt": "2025-08-11T10:11:13.537Z"
   }
 ]
