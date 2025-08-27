@@ -2,11 +2,31 @@
   {
     "id": "1754911392535",
     "name": "Rebecca",
-    "phone": "57650967",
-    "email": "joelkananelo6@gmail.com",
-    "referralSource": "Thomas",
+    "phone": "5950 1355",
+    "email": "N/A",
+    "referralSource": "Unknown",
     "purchaseHistory": [],
     "supportTickets": [],
     "createdAt": "2025-08-11T11:23:12.535Z"
+  },
+  {
+    "id": "1756295221971",
+    "name": "Boitumelo Kompi",
+    "phone": "+266 5677 6561",
+    "email": "bkompi0609@gmail.com",
+    "referralSource": "",
+    "purchaseHistory": [],
+    "supportTickets": [],
+    "createdAt": "2025-08-27T11:47:01.971Z"
+  },
+  {
+    "id": "1756295736629",
+    "name": "Reitumetse Malore",
+    "phone": "placeholder",
+    "email": "marolereitumetse34@gmail.com",
+    "referralSource": "",
+    "purchaseHistory": [],
+    "supportTickets": [],
+    "createdAt": "2025-08-27T11:55:36.629Z"
   }
 ]

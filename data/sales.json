@@ -1,14 +1,36 @@
 [
   {
-    "id": "1754911423142",
-    "laptopId": "1754840815834",
+    "id": "1756295602051",
+    "laptopId": "1756295520556",
     "clientId": "1754911392535",
     "salePrice": 5800,
     "paymentStatus": "partial",
     "paymentMethod": "cash",
-    "saleDate": "2025-08-11",
-    "commissionEarner": "Thomas",
+    "saleDate": "2025-08-12",
+    "commissionEarner": "Unknown",
     "commissionAmount": 300,
-    "createdAt": "2025-08-11T11:23:43.142Z"
+    "createdAt": "2025-08-27T11:53:22.051Z"
+  },
+  {
+    "id": "1756295658499",
+    "laptopId": "1756295566779",
+    "clientId": "1756295221971",
+    "salePrice": 6400,
+    "paymentStatus": "paid",
+    "paymentMethod": "cash",
+    "saleDate": "2025-08-21",
+    "commissionEarner": "",
+    "createdAt": "2025-08-27T11:54:18.499Z"
+  },
+  {
+    "id": "1756295883288",
+    "laptopId": "1756295837852",
+    "clientId": "1756295736629",
+    "salePrice": 6500,
+    "paymentStatus": "paid",
+    "paymentMethod": "cash",
+    "saleDate": "2025-08-19",
+    "commissionEarner": "",
+    "createdAt": "2025-08-27T11:58:03.288Z"
   }
 ]

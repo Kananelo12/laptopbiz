@@ -2,8 +2,8 @@
   {
     "id": "1754911423143_comm",
     "saleId": "1754911423142",
-    "earnerName": "Thomas",
-    "earnerContact": "Thomas",
+    "earnerName": "Unknown",
+    "earnerContact": "",
     "amount": 300,
     "paymentStatus": "pending",
     "createdAt": "2025-08-11T11:23:43.143Z"
