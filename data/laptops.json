@@ -40,5 +40,19 @@
     "status": "sold",
     "purchaseDate": "2025-08-21",
     "createdAt": "2025-08-27T11:57:17.852Z"
+  },
+  {
+    "id": "1756925080855",
+    "corporateBrand": "Dell",
+    "productBrand": "Latitude",
+    "performanceTier": "i5",
+    "generation": "7th Gen",
+    "sku": "000U",
+    "purchasePrice": 3800,
+    "conditionNotes": "Good Condition",
+    "quantity": 0,
+    "status": "sold",
+    "purchaseDate": "2025-08-21",
+    "createdAt": "2025-09-03T18:44:40.855Z"
   }
 ]

@@ -7,5 +7,15 @@
     "amount": 300,
     "paymentStatus": "pending",
     "createdAt": "2025-08-11T11:23:43.143Z"
+  },
+  {
+    "id": "1756925468110_comm",
+    "saleId": "1756925468109",
+    "earnerName": "Thato Lekoeneha",
+    "earnerContact": "Thato Lekoeneha",
+    "amount": 250,
+    "paymentStatus": "paid",
+    "createdAt": "2025-09-03T18:51:08.110Z",
+    "payoutDate": "2025-09-03"
   }
 ]

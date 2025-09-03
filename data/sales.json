@@ -32,5 +32,17 @@
     "saleDate": "2025-08-19",
     "commissionEarner": "",
     "createdAt": "2025-08-27T11:58:03.288Z"
+  },
+  {
+    "id": "1756925468109",
+    "laptopId": "1756925080855",
+    "clientId": "1756925402515",
+    "salePrice": 5800,
+    "paymentStatus": "paid",
+    "paymentMethod": "cash",
+    "saleDate": "2025-09-02",
+    "commissionEarner": "Thato Lekoeneha",
+    "commissionAmount": 250,
+    "createdAt": "2025-09-03T18:51:08.109Z"
   }
 ]
