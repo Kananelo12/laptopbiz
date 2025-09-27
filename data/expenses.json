@@ -1,1 +1,64 @@
-[]
+[
+  {
+    "id": "1758971242548",
+    "date": "2025-08-05",
+    "category": "Misc",
+    "description": "Transaction Commission for Global Payments",
+    "amount": 40,
+    "tripBatch": "trip-1",
+    "createdAt": "2025-09-27T11:07:22.548Z"
+  },
+  {
+    "id": "1758971531095",
+    "date": "2025-08-08",
+    "category": "Transport",
+    "description": "Boxy's first trip, 350 to return + 50 home cab",
+    "amount": 400,
+    "tripBatch": "trip-1",
+    "createdAt": "2025-09-27T11:12:11.095Z"
+  },
+  {
+    "id": "1758971592647",
+    "date": "2025-08-08",
+    "category": "Food",
+    "description": "Boxy's first trip, 150 for food",
+    "amount": 150,
+    "tripBatch": "trip-1",
+    "createdAt": "2025-09-27T11:13:12.647Z"
+  },
+  {
+    "id": "1758971909103",
+    "date": "2025-08-06",
+    "category": "Transport",
+    "description": "Lebelo: Gautrain to Centurion",
+    "amount": 94,
+    "tripBatch": "trip-1",
+    "createdAt": "2025-09-27T11:18:29.103Z"
+  },
+  {
+    "id": "1758972072841",
+    "date": "2025-08-07",
+    "category": "Transport",
+    "description": "BOLT: 86 + 48 + 38 + 40 + 32 + 16",
+    "amount": 260,
+    "createdAt": "2025-09-27T11:21:12.841Z"
+  },
+  {
+    "id": "1758972620792",
+    "date": "2025-08-20",
+    "category": "Transport",
+    "description": "Boxy's 2nd trip:\nTransport: 700 + 40 + 50\nFood: 50",
+    "amount": 940,
+    "tripBatch": "trip-2",
+    "createdAt": "2025-09-27T11:30:20.792Z"
+  },
+  {
+    "id": "1758972728552",
+    "date": "2025-09-10",
+    "category": "Misc",
+    "description": "Boxy - Personal\nPhone Screen and Taser",
+    "amount": 405,
+    "tripBatch": "trip-2",
+    "createdAt": "2025-09-27T11:32:08.552Z"
+  }
+]

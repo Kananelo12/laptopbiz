@@ -5,8 +5,9 @@
     "earnerName": "Unknown",
     "earnerContact": "",
     "amount": 300,
-    "paymentStatus": "pending",
-    "createdAt": "2025-08-11T11:23:43.143Z"
+    "paymentStatus": "paid",
+    "createdAt": "2025-08-11T11:23:43.143Z",
+    "payoutDate": "2025-09-27"
   },
   {
     "id": "1756925468110_comm",
